@@ -10,14 +10,10 @@ public class CursorManager : MonoBehaviour
     {
         // Ensure there is only one instance of CursorManager
         if (Instance == null)
-        {
             Instance = this;
-            DontDestroyOnLoad(gameObject); // Optional: Keeps the CursorManager across scenes
-        }
         else
-        {
             Destroy(gameObject);
-        }
+
     }
 
     void Start()
